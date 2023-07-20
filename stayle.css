@@ -8,9 +8,11 @@ header div {
     justify-content: space-around;
     align-items: center;
 }
-.nav{
+
+.nav {
     align-items: center;
 }
+
 header div h1 {
     text-align: center;
     font-size: 45px;
@@ -135,7 +137,8 @@ header div a {
     font-weight: 700;
     margin-bottom: 0;
 }
-.online_game_title span{
+
+.online_game_title span {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -259,7 +262,7 @@ header div a {
 
 /* buttons */
 
-.button_container{
+.button_container {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -277,12 +280,15 @@ header div a {
     padding: 5px 15px;
     border: 1.5px solid transparent;
 }
-.button_item:hover{
-    border : 1px solid #FF42A5;
+
+ .button_item:hover {
+    border: 1px solid #FF42A5;
+}
+.button_item:hover .button_title{
     color: #F948B2;
 }
 
-.button_item .button_title{
+.button_item .button_title {
     color: #0B0223;
     font-size: 18px;
     font-weight: 600;
@@ -318,6 +324,7 @@ footer>div {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .footer_option a {
@@ -348,13 +355,6 @@ footer>div {
     list-style: none;
 }
 
-.footer_copywrite {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
 .footer_copywrite p {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
@@ -366,66 +366,198 @@ footer>div {
 
 /* responsive for mobile */
 @media screen and (max-width: 577px) {
-    header{
-        display: none;
+    header div {
+        flex-direction: column;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
+
     .banner-info>div {
         width: 70%;
         height: 100%;
     }
-    .banner-info, .banner-img {
+
+    .banner-info,
+    .banner-img {
         width: 100%;
     }
+
     .banner-img img {
         width: 100%;
         height: 70%;
     }
-.banner-info, .banner-img {
-    width: 100%;
+
+    .banner-info,
+    .banner-img {
+        width: 100%;
+    }
+
+    .online_game_title {
+        font-size: 31px;
+    }
+
+    .online_game_des {
+        font-size: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .play_instantly {
+        flex-direction: column;
+    }
+
+    .play_instantly_imgs img {
+        height: 48%;
+        width: 100%;
+    }
+
+    .play_instantly_imgs div {
+        margin-right: 0;
+    }
+
+    .play_instantly_info {
+        width: 100%;
+    }
+
+    .play_instantly_info div {
+        width: 100%;
+    }
+
+    .play_instantly_title {
+        text-align: center;
+    }
+
+    .play_instantly_imgs div {
+        margin: 0 20px;
+    }
+
+    #tab_img {
+        left: -8px;
+    }
+
+    .play_instantly_des {
+        text-align: center;
+    }
+
+    .play_instantly_imgs,
+    .play_instantly_info {
+        width: 100%;
+    }
+
+    .footer_option {
+        flex-wrap: wrap;
+        width: 60%;
+        padding-left: 87px;
+    }
+
+    .footer_menu ul {
+        flex-wrap: wrap;
+        width: 60%;
+        padding-left: 80px;
+    }
+
+    .footer_copywrite {
+        width: 100%;
+    }
+
+    .footer_copywrite p {
+        margin-top: 0;
+        padding-top: 5px;
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
 }
-.online_game_title {
-    font-size: 31px;
-}
-.online_game_des {
-    font-size: 10px;
-}
-.cards{
-    flex-direction: column;
-}
-.card {
-    width: 100%;
-}
-.play_instantly {
-    flex-direction: column;
-}
-.play_instantly_imgs img {
-    height: 48%;
-    width: 100%;
-}
-.play_instantly_imgs div {   
-    margin-right: 0;
-}
-.play_instantly_info {
-    width: 100%;
-}
-.play_instantly_info div {
-    width: 100%;
-}
-.play_instantly_title {
-    text-align: center;
-}
-.play_instantly_imgs div {
-    margin: 0 20px;
-}
-#tab_img {
-    left: -8px;
-}
-.play_instantly_imgs, .play_instantly_info {
-    width: 100%;
-}
+
+/* responsive for tablet max 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header div {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-info>div {
+        width: 40%;
+        height: 100%;
+    }
+
+    .banner-info,
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .banner-info,
+    .banner-img {
+        width: 100%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .play_instantly {
+        flex-direction: column;
+    }
+
+    .play_instantly_imgs img {
+        height: 48%;
+        width: 100%;
+    }
+
+    .play_instantly_imgs div {
+        margin-right: 0;
+    }
+
+    .play_instantly_info {
+        width: 100%;
+    }
+
+    .play_instantly_info div {
+        width: 100%;
+    }
+
+    .play_instantly_title {
+        text-align: center;
+    }
+
+    .play_instantly_imgs div {
+        margin: 0 20px;
+    }
+
+    #tab_img {
+        left: -8px;
+    }
+
+    .play_instantly_imgs,
+    .play_instantly_info {
+        width: 100%;
+    }
+
+    .play_instantly_des {
+        text-align: center;
+    }
 }
